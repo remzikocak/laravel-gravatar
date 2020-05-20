@@ -36,5 +36,36 @@ Gravatar::img('test@example.com', [
 ])
 ```
 
+**Get Gravatar using the 'HasGravatar' trait:**
+
+First add 'HasGravatar' trait to your User Model.
+
+``` php
+<?php
+
+namespace App;
+
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use RKocak\Gravatar\Traits\HasGravatar;
+
+class User extends Authenticatable
+{
+    use Notifiable, HasGravatar;
+```
+
+after adding the Trait, you can use it like this
+
+``` php
+$user = App\User::find(1);
+
+// This will return the Gravatar URL
+$user->getGravatar();
+
+// or get the Generator instance with preset Email
+$generator = $user->getGravatarGenerator();
+```
+
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
