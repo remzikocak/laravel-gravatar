@@ -29,14 +29,14 @@ Gravatar::for('test@example.com')
 Gravatar::img('test@example.com')
 ```
 
-**Get HTML Image Tag with custom attributes:**
+**Get HTML Image Tag with attributes:**
 ``` php
 Gravatar::img('test@example.com', [
     'class' => 'w-10 h-10 rounded-full'
 ])
 ```
 
-**Get Gravatar using the 'HasGravatar' trait:**
+**Get Gravatar using 'HasGravatar' trait:**
 
 First add 'HasGravatar' trait to your User Model.
 
@@ -63,7 +63,7 @@ $user = App\User::find(1);
 // This will return the Gravatar URL
 $user->getGravatar();
 
-// or get the Generator instance with preset Email
+// or get the Generator instance with preset email
 $generator = $user->getGravatarGenerator();
 ```
 
