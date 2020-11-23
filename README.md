@@ -36,6 +36,11 @@ Gravatar::img('test@example.com', [
 ])
 ```
 
+**Check if Gravatar for an email exists:**
+``` php
+Gravatar::exists('test@example.com')
+```
+
 **Get Gravatar using 'HasGravatar' trait:**
 
 First add 'HasGravatar' trait to your User Model.
