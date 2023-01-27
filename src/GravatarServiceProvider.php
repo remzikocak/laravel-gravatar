@@ -1,21 +1,18 @@
 <?php
 
-
 namespace RKocak\Gravatar;
-
 
 use Illuminate\Support\ServiceProvider;
 
 class GravatarServiceProvider extends ServiceProvider
 {
-
     /**
      * @return void
      */
     public function boot()
     {
         $this->publishes([
-            dirname(__DIR__) . '/config/gravatar.php' => config_path('gravatar.php'),
+            dirname(__DIR__).'/config/gravatar.php' => config_path('gravatar.php'),
         ]);
     }
 
@@ -24,8 +21,7 @@ class GravatarServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('gravatar', function($app)
-        {
+        $this->app->singleton('gravatar', function ($app) {
             return new Generator($app['config']);
         });
     }
@@ -37,5 +33,4 @@ class GravatarServiceProvider extends ServiceProvider
     {
         return ['gravatar'];
     }
-
 }

@@ -1,15 +1,12 @@
 <?php
 
-
 namespace RKocak\Gravatar\Traits;
-
 
 use RKocak\Gravatar\Facades\Gravatar;
 use RKocak\Gravatar\Generator;
 
 trait HasGravatar
 {
-
     /**
      * @return string
      */
@@ -25,5 +22,4 @@ trait HasGravatar
     {
         return Gravatar::for($this->email);
     }
-    
 }

@@ -1,13 +1,11 @@
 <?php
 
-
 namespace RKocak\Gravatar\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 class Gravatar extends Facade
 {
-
     /**
      * @return string
      */
@@ -15,5 +13,4 @@ class Gravatar extends Facade
     {
         return 'gravatar';
     }
-
 }

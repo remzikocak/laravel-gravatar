@@ -1,6 +1,5 @@
 <?php
 
-
 namespace RKocak\Tests;
 
 use Illuminate\Config\Repository as Config;
@@ -9,7 +8,6 @@ use RKocak\Gravatar\Generator;
 
 class GravatarTest extends TestCase
 {
-
     /**
      * @var Generator
      */
@@ -82,10 +80,9 @@ class GravatarTest extends TestCase
     {
         $config = new Config();
         $config->set([
-            'gravatar' => include dirname(__DIR__) . '/config/gravatar.php'
+            'gravatar' => include dirname(__DIR__).'/config/gravatar.php',
         ]);
 
         return $config;
     }
-
 }
