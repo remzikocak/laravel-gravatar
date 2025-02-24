@@ -1,6 +1,6 @@
 {
     "name": "remzikocak/laravel-gravatar",
-    "description": "Gravatar Generator for Laravel 9/10",
+    "description": "Gravatar Generator for Laravel 9/10/11/12",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -19,8 +19,8 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.1",
-        "illuminate/config": "^9.0|^10.0|^11.0",
-        "illuminate/support": "^9.0|^10.0|^11.0"
+        "illuminate/config": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0"
