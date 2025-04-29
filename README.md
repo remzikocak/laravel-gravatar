@@ -1,4 +1,4 @@
-# Gravatar Helper for Laravel 9/10
+# Gravatar Helper for Laravel 9/10/11/12
 
 This Package will help you to Generate Gravatar URL's with Laravel.
 
